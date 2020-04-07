@@ -111,6 +111,8 @@
 	  var quizContainer = document.getElementById('quiz');
 	  var resultsContainer = document.getElementById('results');
 	  var submitButton = document.getElementById('submit');
+
+	  // Only change bellow this line! ------------------------------------------
 	  var myQuestions = [{
 	    question: "What's my name?",
 	    answers: {
@@ -139,6 +141,7 @@
 	    },
 	    correctAnswer: "c"
 	  }];
+	  //And above this line -----------------------------------------------------
 
 	  // Kick things off
 	  buildQuiz();
