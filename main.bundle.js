@@ -112,30 +112,32 @@
 	  var resultsContainer = document.getElementById('results');
 	  var submitButton = document.getElementById('submit');
 	  var myQuestions = [{
-	    question: "Who invented JavaScript?",
+	    question: "What's my name?",
 	    answers: {
-	      a: "Douglas Crockford",
-	      b: "Sheryl Sandberg",
-	      c: "Brendan Eich"
+	      a: "Finn",
+	      b: "Rick",
+	      c: "Elliot",
+	      d: "Francis"
+	    },
+	    correctAnswer: "a"
+	  }, {
+	    question: "What pets do I have?",
+	    answers: {
+	      a: "2 dogs, 1 cat",
+	      b: "2 cats, 1 dog",
+	      c: "16 tarantulas",
+	      d: "Just a dinosaur named Tulip"
+	    },
+	    correctAnswer: "b"
+	  }, {
+	    question: "What's my favorite sport?",
+	    answers: {
+	      a: "Baseball",
+	      b: "Punch The Cactus",
+	      c: "Basketball",
+	      d: "Soccer"
 	    },
 	    correctAnswer: "c"
-	  }, {
-	    question: "Which one of these is a JavaScript package manager?",
-	    answers: {
-	      a: "Node.js",
-	      b: "TypeScript",
-	      c: "npm"
-	    },
-	    correctAnswer: "c"
-	  }, {
-	    question: "Which tool can you use to ensure code quality?",
-	    answers: {
-	      a: "Angular",
-	      b: "jQuery",
-	      c: "RequireJS",
-	      d: "ESLint"
-	    },
-	    correctAnswer: "d"
 	  }];
 
 	  // Kick things off
