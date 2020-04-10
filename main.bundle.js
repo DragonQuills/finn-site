@@ -46,7 +46,6 @@
 
 	'use strict';
 
-	// Bootstrapped from https://www.sitepoint.com/simple-javascript-quiz/
 	(function () {
 	  function buildQuiz() {
 	    // variable to store the HTML output
@@ -62,11 +61,11 @@
 	      for (letter in currentQuestion.answers) {
 
 	        // ...add an HTML radio button
-	        answers.push('<label>\n                <input type="radio" name="question' + questionNumber + '" value="' + letter + '">\n                ' + letter + ' :\n                ' + currentQuestion.answers[letter] + '\n              </label>');
+	        answers.push('<label>\n                <input type="radio" name="question' + questionNumber + '" value="' + letter + '">\n                ' + letter + ' :\n                ' + currentQuestion.answers[letter] + '\n              </label>\n              <br>');
 	      }
 
 	      // add this question and its answers to the output
-	      output.push('<div class="question"> ' + currentQuestion.question + ' </div>\n            <div class="answers"> ' + answers.join('') + ' </div>');
+	      output.push('<div class="question"> ' + currentQuestion.question + ' </div>\n            <div class="answers"> ' + answers.join('') + ' </div>\n            <br>');
 	    });
 
 	    // finally combine our output list into one string of HTML and put it on the page
@@ -114,33 +113,43 @@
 
 	  // Only change bellow this line! ------------------------------------------
 	  var myQuestions = [{
-	    question: "What's my name?",
+	    question: "What was Martin Luther King Jr's other profession?",
 	    answers: {
-	      a: "Finn",
-	      b: "Rick",
-	      c: "Elliot",
-	      d: "Francis"
+	      a: "Doctor",
+	      b: "Dog walker",
+	      c: "Minister",
+	      d: "Banker"
 	    },
-	    correctAnswer: "a"
+	    correctAnswer: "c"
 	  }, {
-	    question: "What pets do I have?",
+	    question: "How is COVID-19 affecting the asian american population?",
 	    answers: {
-	      a: "2 dogs, 1 cat",
-	      b: "2 cats, 1 dog",
-	      c: "16 tarantulas",
-	      d: "Just a dinosaur named Tulip"
+	      a: "They are more likly to carry the virus",
+	      b: "They're being discriminated against because people think they caused the virus",
+	      c: "They're getting sick faster",
+	      d: "They are happier"
 	    },
 	    correctAnswer: "b"
 	  }, {
-	    question: "What's my favorite sport?",
+	    question: "Which president signed the civil rights act?",
 	    answers: {
-	      a: "Baseball",
-	      b: "Punch The Cactus",
-	      c: "Basketball",
-	      d: "Soccer"
+	      a: "Abraham Lincoln",
+	      b: "James Harden",
+	      c: "John F Kennedy",
+	      d: "Lyndon B Johnson"
 	    },
-	    correctAnswer: "c"
+	    correctAnswer: "d"
+	  }, {
+	    question: "How can you help prevent racism?",
+	    answers: {
+	      a: "Call out racist statments or 'Jokes'",
+	      b: "Examine your own oppinions or biasas and consider where they came from",
+	      c: "Find out how your company or school works to expand opportunities for people of color.",
+	      d: "ALL OF THE ABOVE"
+	    },
+	    correctAnswer: "d"
 	  }];
+
 	  //And above this line -----------------------------------------------------
 
 	  // Kick things off
